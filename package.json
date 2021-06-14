@@ -1,0 +1,24 @@
+{
+  "name": "imageshrink",
+  "productName": "ImageShrink",
+  "version": "1.0.0",
+  "description": "Shrink Images for practice",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package-win": "electron-packager . --overwrite --platform=win32 --arch=ia32 --icon=./assets/icons/win/icon.ico --prune=false --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"ImageShrink\""
+  },
+  "author": "Romaine Halstead",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^13.1.2"
+  },
+  "dependencies": {
+    "electron-log": "^4.3.5",
+    "electron-packager": "^15.2.0",
+    "imagemin": "^7.0.1",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-pngquant": "^8.0.0",
+    "slash": "^3.0.0"
+  }
+}
